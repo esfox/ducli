@@ -6,4 +6,4 @@ let [ command, ...parameters ] = args;
 if(![ 'init', 'new', 'help' ].includes(command))
   return console.log("That's not a valid command");
 
-require(`./${command}`)(...parameters);
+require(`./commands/${command}`)(...parameters);
