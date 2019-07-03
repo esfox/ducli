@@ -12,7 +12,7 @@ module.exports = class extends Command
 }
 
 /** @param {import('discord-utils').Context} context*/
-function action(context)
+async function action(context)
 {
 
 }

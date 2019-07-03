@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const templatesPath = `${__dirname}/templates`;
+const templatesPath = `${__dirname}/../templates`;
 const templates = fs.readdirSync(templatesPath)
   .reduce((templates, template) =>
   {
