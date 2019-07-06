@@ -5,6 +5,9 @@ const { Context } = require('discord-utils');
 const context = new Context(bot);
 context.setModulesPath(`${__dirname}/modules`);
 
+const config = require('./config');
+context.setConfig(config);
+
 bot.login('TOKEN HERE');
 bot.on('ready', _ =>
 {
